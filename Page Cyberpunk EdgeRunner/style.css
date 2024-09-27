@@ -1,36 +1,122 @@
+body{
+    font-family: "Blender Pro Book", sans-serif;
+    font-weight: 300;
+}
+
 .sectionUne{
     height:100vh;
     max-height: 960px;
     max-width: 100%;
+    background-position: 50%
 }
 
-.backgroundImage{
-    background-image: url(Images/cover-desktop@1x-7e66501a.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    z-index: -1;
+.cover-img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 
 .logo{
-    max-width: 370px;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    margin:20px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    left: 40px;
+    margin: 0 auto;
+    position: absolute;
+    top: 20px;
+    width: 370px;
+    z-index: 1;
 }
 
+.logo-2{
+    display: flex;
+    justify-content: center;
+    padding-top: 24.5%;
+    position: relative;
+    width: 100%;
+}
+.logo img{
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
 .creator{
     max-width: 140px;
     height: 61px;
 }
 
 .separator{
-    display: flex;
+    background-image: url(Images/separator-yellow-f58e9aba.svg);
+    background-position: 0 100%;
+    background-color: initial;
+    top: calc(100% - 39px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    max-height: 960px;
+    max-width: 100%;
+    background-repeat: repeat-x;
 }
 
 .borderImg{
-    border-image: url(Images/cp-btn-yellow-rotated-e4a15f93.svg) 0 0 fill;
     display:flex;
     align-items: center;
     justify-content: center;
+    position:absolute;
+    bottom: 25%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: red;
+}
+
+.btn-text-style{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btn-reverse{
+    border-image: url(Images/cp-btn-yellow-rotated-e4a15f93.svg) 0 20 fill;
+    border-style: solid;
+    border-width: 0 20px;
+    height: 48px;
+    min-width: 232px;
+}
+
+.btn{
+    min-width: 232px;
+    display: flex;
+    align-items: center;
+    border-width: 0 20px;
+}
+
+.btn a{
+    font-size: 22px;
+    margin: 10px;
+}
+
+.btn-yellow{
+    color: #fcee0a;
+}
+
+.btn-normal{
+    border-image: url(Images/cp-btn-yellow-fd1ca428.svg) 0 20 fill;
+    border-style : solid;
+    border-width: 0 20px;
+    height: 48px;
+    min-width: 232px;
+}
+
+.borderImg img{
+    margin-left: 10px;
+}
+
+.borderImg a{
+    margin: 10px;
 }
