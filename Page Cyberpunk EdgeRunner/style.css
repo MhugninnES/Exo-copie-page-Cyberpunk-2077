@@ -1,0 +1,36 @@
+.sectionUne{
+    height:100vh;
+    max-height: 960px;
+    max-width: 100%;
+}
+
+.backgroundImage{
+    background-image: url(Images/cover-desktop@1x-7e66501a.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.logo{
+    max-width: 370px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin:20px;
+}
+
+.creator{
+    max-width: 140px;
+    height: 61px;
+}
+
+.separator{
+    display: flex;
+}
+
+.borderImg{
+    border-image: url(Images/cp-btn-yellow-rotated-e4a15f93.svg) 0 0 fill;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
